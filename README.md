@@ -30,14 +30,22 @@ Metrik: balanced accuracy.
 
 ## Sonuçlar
 
-| Deney | OOF CV | Public LB |
-|---|---|---|
-| Baseline XGB, düz argmax | 0.87852 | — |
-| Baseline XGB + prior correction | **0.94975** | **0.94979** |
+| # | Deney | OOF CV | Public LB | Submission |
+|---|---|---|---|---|
+| — | Baseline XGB, düz argmax | 0.87852 | — | — |
+| 1 | Baseline XGB + prior correction | 0.94975 | 0.94979 | `1-submission_baseline.csv` |
+| — | + karar katsayısı optimizasyonu (exp2) | 0.94983 | denenmedi | — |
+| 2 | + eşik özellikleri: sleep<6/7, kural, etkileşim (exp3) | **0.94988** | **0.95004** | `2-submission_features.csv` |
 
-CV ile LB farkı sadece 0.00004 — CV altyapısı güvenilir.
+CV ile LB farkları 0.0002'nin altında — CV altyapısı güvenilir.
 
-Fold skorları: 0.95042 / 0.95183 / 0.94893 / 0.94953 / 0.94802
+Notlar:
+- exp2 (karar katsayısı taraması) sadece +0.00008 verdi — gürültü
+  seviyesinde, OOF'a ezber riski nedeniyle kullanılmadı.
+- exp3 eşik özellikleri 5 fold'un 4'ünde iyileşme sağladı (+0.00013).
+
+Baseline fold skorları: 0.95042 / 0.95183 / 0.94893 / 0.94953 / 0.94802
+exp3 fold skorları: 0.95054 / 0.95194 / 0.94937 / 0.94946 / 0.94811
 
 ## Çalıştırma
 
@@ -51,7 +59,8 @@ proje kök klasörüne konmalı. Eğitim CPU'da ~15 dk sürüyor.
 
 ## Yol haritası
 
-- [x] Baseline XGB + native NaN + prior correction (CV 0.94975)
-- [ ] Özellik mühendisliği: sleep<6, sleep<7 eşik özellikleri, stres etkileşimi
+- [x] Baseline XGB + native NaN + prior correction (CV 0.94975, LB 0.94979)
+- [x] Karar katsayısı optimizasyonu — gürültü seviyesi, kullanılmadı
+- [x] Özellik mühendisliği: sleep<6, sleep<7, kural özellikleri (CV 0.94988, LB 0.95004)
 - [ ] Model çeşitlendirme: LightGBM, CatBoost
 - [ ] Blend / ensemble (hedef ~0.951)

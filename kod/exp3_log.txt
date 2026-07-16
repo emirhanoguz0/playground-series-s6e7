@@ -1,0 +1,95 @@
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:56: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[c] = X[c].astype("category")
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:57: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X_test[c] = pd.Categorical(X_test[c], categories=X[c].cat.categories)
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:56: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[c] = X[c].astype("category")
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:57: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X_test[c] = pd.Categorical(X_test[c], categories=X[c].cat.categories)
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:56: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[c] = X[c].astype("category")
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:57: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X_test[c] = pd.Categorical(X_test[c], categories=X[c].cat.categories)
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:56: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[c] = X[c].astype("category")
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:57: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X_test[c] = pd.Categorical(X_test[c], categories=X[c].cat.categories)
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:56: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[c] = X[c].astype("category")
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:57: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X_test[c] = pd.Categorical(X_test[c], categories=X[c].cat.categories)
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:56: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[c] = X[c].astype("category")
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:57: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X_test[c] = pd.Categorical(X_test[c], categories=X[c].cat.categories)
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:56: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X[c] = X[c].astype("category")
+/sessions/gifted-wizardly-sagan/work/exp3_features.py:57: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  X_test[c] = pd.Categorical(X_test[c], categories=X[c].cat.categories)
+fold 0: BA=0.95054  best_iter=436  (180s)
+fold 1: BA=0.95194  best_iter=439  (355s)
+fold 2: BA=0.94937  best_iter=554  (560s)
+fold 3: BA=0.94946  best_iter=520  (756s)
+fold 4: BA=0.94811  best_iter=455  (931s)
+
+OOF BA (prior correction): 0.94988
+baseline idi:              0.94975
+fark:                      +0.00013
+
+toplam sure: 931s
