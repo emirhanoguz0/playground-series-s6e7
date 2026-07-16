@@ -1,0 +1,17 @@
+fold 0: BA=0.95042  best_iter=489  (240s)
+fold 1: BA=0.95183  best_iter=540  (445s)
+fold 2: BA=0.94893  best_iter=435  (588s)
+fold 3: BA=0.94953  best_iter=562  (757s)
+fold 4: BA=0.94802  best_iter=462  (890s)
+
+OOF BA (duz argmax):        0.87852
+OOF BA (prior correction):  0.94975
+
+submission dagilimi:
+health_condition
+at-risk      0.8098
+unhealthy    0.1159
+fit          0.0743
+Name: proportion, dtype: float64
+
+toplam sure: 890s

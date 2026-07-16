@@ -1,0 +1,6 @@
+# buyuk veri dosyalari githuba konmaz (Kaggle kurali + boyut)
+train.csv
+test.csv
+sample_submission.csv
+*.npy
+__pycache__/
