@@ -41,6 +41,10 @@ Metrik: balanced accuracy.
 | 3 | Blend: 0.8×XGB + 0.1×LGBM + 0.1×CatBoost (exp4) | **0.94993** | 0.95001 | `3-submission_blend.csv` |
 | — | Sadece 3 çekirdek özellik + türetilmişler (exp5) | 0.94392 | — | — |
 | 4 | Seed ortalaması: 5 seed × exp3 modeli (exp6) | 0.94990* | 0.95000 | `4-submission_seedavg.csv` |
+| — | + orijinal veri (50k, sadece eğitim kısmına) (exp7) | 0.94961 | — | — |
+| — | Stacking: 3 modelin OOF'u + lojistik regresyon (exp8) | 0.94984 | — | — |
+| — | + eksiklik özellikleri: NaN sayısı, bayraklar (exp9) | 0.94977 | — | — |
+| — | Pseudo-labeling: 246k güvenli test satırı (exp10) | 0.94984 | — | — |
 
 \* exp6 CV'si tek OOF değil, 5 seed'in OOF ortalaması (42/7/123/2024/555:
 0.94988/0.94991/0.94990/0.94987/0.94995, std 0.00003).
@@ -76,3 +80,20 @@ proje kök klasörüne konmalı. Eğitim CPU'da ~15 dk sürüyor.
       eksik değer kalıpları üzerinden sinyal taşıyor, atılmamalı.
 - [x] exp6: seed ortalaması (5 seed) — seed OOF ort. 0.94990, LB 0.95000.
       exp3'ü (0.95004) geçemedi; kazançlar artık gürültü içinde kayboluyor.
+- [x] exp7: orijinal veri (College Student Health Behavior, 50k, CC0) eğitime
+      eklendi — CV 0.94961 (−0.00027). Orijinalde eksik değer yok; sentetik
+      verinin eksik değer kalıplarını sulandırıp zarar veriyor. Kural gereği
+      dış veri serbest (bölüm 2.6), ama fayda etmedi.
+- [x] exp8: stacking (lojistik regresyon meta-model) — CV 0.94984, exp4
+      blend'in (0.94993) gerisinde. Basit ağırlıklı ortalama daha iyi.
+- [x] exp9: eksiklik özellikleri (NaN sayısı + bayraklar) — CV 0.94977.
+      XGBoost native NaN bu bilgiyi zaten kullanıyor, açık bayrak gereksiz.
+- [x] exp10: pseudo-labeling (max proba > 0.99, 246k satır) — CV 0.94984.
+      Kazanç yok; model zaten öğrenebileceğini öğrenmiş.
+
+## Sonuç
+
+12 deney sonunda en iyi model: **exp3** (eşik özellikli XGB, LB 0.95004).
+Tavan ~0.951'e 0.0005 mesafede. exp4-10 arası hiçbir teknik exp3'ü geçemedi —
+sentetik verinin sinyali tükenmiş durumda. Final seçimi: `2-submission_features.csv`
+(birincil) + `3-submission_blend.csv` (yedek, CV'de en yüksek).
