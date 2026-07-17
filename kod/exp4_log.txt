@@ -1,0 +1,16 @@
+lgbm fold 0: BA=0.95026 (39s)
+lgbm fold 1: BA=0.95169 (74s)
+lgbm fold 2: BA=0.94913 (106s)
+lgbm fold 3: BA=0.94924 (139s)
+lgbm fold 4: BA=0.94765 (172s)
+lgbm OOF BA: 0.94959
+
+catboost fold 0: BA=0.94972 (1317s)
+catboost fold 1: BA=0.95107 (2588s)
+catboost fold 2: BA=0.94872 (3967s)
+catboost fold 3: BA=0.94892 (5475s)
+catboost fold 4: BA=0.94745 (7490s)
+catboost OOF BA: 0.94918
+
+en iyi blend: BA=0.94993  w(xgb,lgbm,cat)=[0.8 0.1 0.1]
+submission kaydedildi

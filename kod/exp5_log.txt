@@ -1,0 +1,12 @@
+ozellik sayisi: 8 -> ['sleep_duration', 'stress_level', 'physical_activity_level', 'sleep_lt6', 'sleep_lt7', 'rule_unhealthy', 'rule_fit', 'stress_sleep']
+fold 0: BA=0.94499  best_iter=274  (105s)
+fold 1: BA=0.94520  best_iter=305  (223s)
+fold 2: BA=0.94344  best_iter=354  (354s)
+fold 3: BA=0.94369  best_iter=334  (478s)
+fold 4: BA=0.94228  best_iter=316  (596s)
+
+OOF BA (prior correction): 0.94392
+exp3 (tum ozellikler) idi: 0.94988
+fark:                      -0.00596
+
+toplam sure: 596s
