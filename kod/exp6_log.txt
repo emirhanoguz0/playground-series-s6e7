@@ -1,0 +1,31 @@
+seed 42: exp3'ten alindi, OOF BA=0.94988
+seed 42: hazir (OOF BA=0.94988)
+  seed 7 fold 0 tamam (197s)
+  seed 7 fold 1 tamam (352s)
+  seed 7 fold 2 tamam (513s)
+  seed 7 fold 3 tamam (675s)
+  seed 7 fold 4 tamam (849s)
+seed 7: OOF BA=0.94991  (849s)
+  seed 123 fold 0 tamam (1023s)
+  seed 123 fold 1 tamam (1265s)
+  seed 123 fold 2 tamam (1455s)
+  seed 123 fold 3 tamam (1635s)
+  seed 123 fold 4 tamam (1797s)
+seed 123: OOF BA=0.94990  (1797s)
+  seed 2024 fold 0 tamam (1959s)
+  seed 2024 fold 1 tamam (2139s)
+  seed 2024 fold 2 tamam (2289s)
+  seed 2024 fold 3 tamam (2461s)
+  seed 2024 fold 4 tamam (2647s)
+seed 2024: OOF BA=0.94987  (2647s)
+  seed 555 fold 0 tamam (2836s)
+  seed 555 fold 1 tamam (2998s)
+  seed 555 fold 2 tamam (3165s)
+  seed 555 fold 3 tamam (3337s)
+  seed 555 fold 4 tamam (3499s)
+seed 555: OOF BA=0.94995  (3499s)
+
+seed OOF ortalamasi: 0.94990  std: 0.00003
+exp3 (tek seed 42) idi: 0.94988
+exp3 submission'dan farkli tahmin orani: 0.0588%
+submission kaydedildi
