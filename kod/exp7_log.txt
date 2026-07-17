@@ -1,0 +1,11 @@
+fold 0: BA=0.95038  best_iter=449  (304s)
+fold 1: BA=0.95146  best_iter=466  (621s)
+fold 2: BA=0.94910  best_iter=449  (870s)
+fold 3: BA=0.94909  best_iter=488  (1072s)
+fold 4: BA=0.94804  best_iter=463  (1265s)
+
+OOF BA (prior correction): 0.94961
+exp3 (orijinalsiz) idi:    0.94988
+fark:                      -0.00027
+
+toplam sure: 1266s
