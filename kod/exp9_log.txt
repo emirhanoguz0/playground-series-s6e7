@@ -1,0 +1,12 @@
+ozellik sayisi: 22
+fold 0: BA=0.95045  best_iter=441  (171s)
+fold 1: BA=0.95173  best_iter=470  (352s)
+fold 2: BA=0.94926  best_iter=445  (527s)
+fold 3: BA=0.94918  best_iter=523  (719s)
+fold 4: BA=0.94823  best_iter=507  (916s)
+
+OOF BA (prior correction): 0.94977
+exp3 idi:                  0.94988
+fark:                      -0.00011
+
+toplam sure: 917s
