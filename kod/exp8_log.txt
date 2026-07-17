@@ -1,0 +1,9 @@
+fold 0: BA=0.95055
+fold 1: BA=0.95185
+fold 2: BA=0.94946
+fold 3: BA=0.94920
+fold 4: BA=0.94814
+
+stack OOF BA: 0.94984
+exp3: 0.94988 | exp4 blend: 0.94993
+exp3 submission'dan fark: 0.1038%
